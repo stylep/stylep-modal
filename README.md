@@ -1,25 +1,25 @@
-# stylep-template
+# stylep-modal
 
 Everything you need to get started making a new style pattern.
 
 ## Install
 ``` shell
-npm i --save-dev stylep-name
+npm i --save-dev stylep-modal
 ```
 
 ## Usage
 ``` css
-/* name.css */
+/* modal.css */
 
-@import “stylep-name”;
+@import “stylep-modal”;
 
 .class {
 
   /* Button Design Pattern */
-  @extend %name;
+  @extend %modal;
 
   /* Customize your button */
-  @mixin name param, param;
+  @mixin modal param, param;
 
   /* or roll your own */
 
@@ -30,22 +30,22 @@ npm i --save-dev stylep-name
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %name-of-pattern;`
+#### `@extend %modal-of-pattern;`
 Describe what this pattern does.
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### name-of-style
+### modal
 Describe the visual look and feel of this style.
 
 ##### Options
 
-* `$param-name: default-value` Describe what this does
+* `$param-modal: default-value` Describe what this does
 
 ##### Example
 ```css
 /* describe in english what this following statement really means in detail */
-@mixin name-of-style default-value;
+@mixin modal default-value;
 ```
 
