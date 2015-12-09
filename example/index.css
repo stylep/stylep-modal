@@ -1,0 +1,22 @@
+/* @import stylep-button; */
+@import '../index.css';
+
+body {
+  background-color: #E8EBEF;
+  color: #6B6B77;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em 1em .125em;
+  margin-bottom: 1em;
+}
+
+h1 { font-weight: 100; letter-spacing: 1px; }
+h2 { font-weight: 200; }
+h3 { font-weight: 300; }
+
+/* specific classNames that show off every pattern and style */
+
