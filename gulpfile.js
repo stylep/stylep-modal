@@ -21,7 +21,6 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function() {
-
         // Watch css and compile upon file changed
         gulp.watch('test.css', ['css']);
 });
