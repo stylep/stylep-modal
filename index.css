@@ -26,7 +26,6 @@
 }
 
 @define-mixin modal-solid
-  $color-title: #444,
   $color-passive: #f7f7f7,
   $color-text: #444,
   $radius-size: 0,
@@ -39,7 +38,6 @@
 }
 
 @define-mixin modal-hollow
-  $color-title: #444,
   $color-passive: #444,
   $color-text: #444,
   $color-background: #fff,
@@ -54,23 +52,25 @@
 
 @define-mixin modal-title
   $color-title: #444,
-  $color-text: #fff
+  $color-text: #fff,
+  $color-icon: rgba(255, 255, 255, .5),
+  $font-size: 1.3em
 {
   background-color: $color-title;
   color: $color-text;
-  font-size: 1.3em;
+  font-size: $font-size;
   margin: -.5em -1em .5em -1em;
   min-height: 44px;
   padding: .5em 1em;
   position: relative;
 
   i {
-    color: rgba(255, 255, 255, .5);
+    color: $color-icon;
     cursor: pointer;
     font-size: 40px;
     position: absolute;
-    right: .5rem;
-    top: .5rem;
+    right: .5em;
+    top: .5em;
   }
 }
 
