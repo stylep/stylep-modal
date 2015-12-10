@@ -11,6 +11,7 @@ body {
 section {
   background-color: #fff;
   padding: 1em 1em .125em;
+  position: relative;
   margin-bottom: 1em;
 }
 
@@ -18,5 +19,54 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-/* specific classNames that show off every pattern and style */
+.modal--inline {
+  @extend %modal-inline;
+}
 
+.modal--block {
+  @extend %modal-block;
+}
+
+.modal--solid {
+  @mixin modal-solid;
+}
+
+.modal--hollow {
+  @mixin modal-hollow;
+}
+
+.modal--title {
+  @mixin modal-title;
+}
+
+.modal--top {
+  @mixin modal-top;
+}
+
+.modal--top-right {
+  @mixin modal-top-right;
+}
+
+.modal--top-left {
+  @mixin modal-top-left;
+}
+
+.modal--bottom {
+  @mixin modal-bottom;
+}
+
+.modal--bottom-right {
+  @mixin modal-bottom-right;
+}
+
+.modal--bottom-left {
+  @mixin modal-bottom-left;
+}
+
+.modal--middle {
+  @mixin modal-middle;
+}
+
+.modal--close {
+  @mixin modal-close;
+}
