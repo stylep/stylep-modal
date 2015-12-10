@@ -13,39 +13,64 @@ npm i --save-dev stylep-modal
 
 @import “stylep-modal”;
 
-.class {
+.modal {
 
   /* Button Design Pattern */
-  @extend %modal;
+  @extend %modal-inline;
 
   /* Customize your button */
-  @mixin modal param, param;
+  @mixin modal-solid #444, #f7f7f7, #888, 4px, none, none;
 
   /* or roll your own */
 
-  /* add something custom in here */
+  background-color: pink;
+  color: white;
 }
 ```
 
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %modal-of-pattern;`
-Describe what this pattern does.
+#### `@extend %modal-inline;`
+This draws a simple inline modal without style.
+
+#### `@extend %modal-block;`
+This draws a simple block modal without style.
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### modal
-Describe the visual look and feel of this style.
+### modal-solid
+A card-like solid style for a modal.
 
 ##### Options
 
-* `$param-modal: default-value` Describe what this does
+* `$color-passive: #f7f7f7` Background color of the modal
+* `$color-text: #444` Color of the text of the modal body
+* `$radius-size: 0` Rounded corner value for the modal
+* `$border: none` Style of border for the modal
+* `$shadow: 0 2px 2px rgba(0, 0, 0, .4)` Basic shadow option for the modal
 
 ##### Example
 ```css
-/* describe in english what this following statement really means in detail */
-@mixin modal default-value;
+/* A solid modal with a light background, dark text, no radius, dark border and a dark shadow applied */
+@mixin modal-solid #f7f7f7, #444, 0, 1px solid #444, 0 2px 2px #000;
 ```
 
+### modal-hollow
+A card-like hollow style for a modal.
+
+##### Options
+
+* `$color-passive: #444` Border color of the modal
+* `$color-text: #444` Color of the text of the modal body
+* `$color-background: #fff` Background color of the modal
+* `$radius-size: 0` Rounded corner value for the modal
+* `$border-width: 1px` Width of border for the modal
+* `$shadow: none` Basic shadow option for the modal
+
+##### Example
+```css
+/* A solid modal with a light background, dark text, no radius, dark border and a dark shadow applied */
+@mixin modal-solid #f7f7f7, #444, 0, 1px solid #444, 0 2px 2px #000;
+```
