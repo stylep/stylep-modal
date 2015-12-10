@@ -60,17 +60,17 @@
   color: $color-text;
   font-size: $font-size;
   margin: -.5em -1em .5em -1em;
-  min-height: 44px;
   padding: .5em 1em;
   position: relative;
 
   i {
     color: $color-icon;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 28px;
+    font-style: normal;
     position: absolute;
     right: .5em;
-    top: .5em;
+    top: .2em;
   }
 }
 
