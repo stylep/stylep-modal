@@ -77,3 +77,6 @@ A card-like hollow style for a modal.
 /* A solid modal with a light background, dark text, no radius, dark border and a dark shadow applied */
 @mixin modal-solid #f7f7f7, #444, 0, 1px solid #444, 0 2px 2px #000;
 ```
+
+## License
+This project is licensed under the MIT [license](LICENSE).
