@@ -1,5 +1,5 @@
 # stylep-modal
-<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-button align=right height=95>
+<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep align=right height=95>
 
 Everything you need to get started making a new style pattern.
 
