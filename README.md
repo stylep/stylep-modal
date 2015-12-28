@@ -18,10 +18,10 @@ spm install modal
 
 .modal {
 
-  /* Button Design Pattern */
+  /* Modal Design Pattern */
   @extend %modal-inline;
 
-  /* Customize your button */
+  /* Customize your modal */
   @mixin modal-solid #444, #f7f7f7, #888, 4px, none, none;
 
   /* or roll your own */
